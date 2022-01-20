@@ -1,0 +1,96 @@
+
+
+.cont_Table {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.table-general{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: auto;
+}
+
+
+.table-general tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+}
+
+.table-general th, .table-general td {
+    font-size: 16px;
+    padding: 8px;
+    text-align: center;
+}
+
+.table-general thead th{ 
+    text-transform: uppercase;
+    background-color: skyblue;
+}
+
+.btn_TblDelete{
+    width:28px;
+    height:26px;
+    background: #E92453;
+    border:none;
+    border-radius:3px;
+    color:#ffffff;
+} 
+.btn_TblUpdate{
+    width:28px;
+    height:26px;
+    background: #FFC300;
+    border:none;
+    border-radius:3px;
+    color:#ffffff;
+}
+.btn_TblUpdate a, .btn_TblDelete a{
+        color: white
+}
+
+
+@media screen and (max-width: 900px) {
+    .table-general{
+        border: 0px;
+    }
+    .table-general caption {
+        font-size: 22px;
+    }
+    .table-general thead {
+        display: none;
+    }
+    .table-general tr {
+        margin-bottom: 8px;
+        border-bottom: 4px solid #ddd;
+        display: block;
+    }
+    .table-general th, .table td {
+        font-size: 12px;
+        min-width: 150px;
+    }
+    .table-general td {
+        display: block;
+        border-bottom: 1px solid #ddd;
+        text-align: right;
+    }
+    .table-general  td:last-child {
+        border-bottom: 0px;
+    }
+    .table-general td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+        float: left;
+    }
+}
+.container-1{
+display: flex;
+justify-content: space-around;
+
+    
+}
+/* FOOTER */
